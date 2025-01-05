@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.topbar {
+  border-radius: 0.5rem;
+}
+
+.parallax-container {
+  position: relative;
+  height: 50vh;
+}
+
+.background-image {
+  background-image: url('./assets/website.png');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  filter: blur(3px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  color: #EAEAEA;
+  background-color: #080820;
+  backdrop-filter: blur(10px);
+}
+
+.teampic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.textcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+  color: #EAEAEA;
+  margin: 0 auto;
+}
